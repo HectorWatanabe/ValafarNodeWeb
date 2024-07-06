@@ -1,0 +1,5 @@
+<p>Bienvenido, <%= user.username %>!</p>
+<form action="/logout" method="POST">
+  <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+  <button type="submit">Cerrar Sesión</button>
+</form>
